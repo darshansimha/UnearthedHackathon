@@ -10,7 +10,7 @@ while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 			$domString = $domString . '<tr>';
 			foreach($row as $key=>$value) {
 				if($key == 'Operator_Name'){
-					$domString = $domString . '<td><a href="getUser?userId='.'">'. $value. '</a></td>';
+					$domString = $domString . '<td><a href="getUserDetails.php?userId='.$value.'">'. $value. '</a></td>';
 				}else{
 					$domString = $domString . '<td>'. $value. '</td>';
 				}		
